@@ -293,3 +293,66 @@ footer .socials li a {
     color: inherit;
     border-radius: 50px;
 }
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#gallery .imageContainer {
+    width: 100%;
+    aspect-ratio: 13/16;
+    overflow: hidden;
+}
+
+#gallery .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#newArrivals .container .product .content .order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#newArrivals .container .product .content .order button {
+    width: 45px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#newArrivals .container .product .content .order button.add {
+    background: green;
+    color: white;
+}
+
+#newArrivals .container .product .content .order button.subtract {
+    background: red;
+    color: white;
+}
+
+#newArrivals .container .product .content .order button.addToCart {
+    background: #121212;
+    color: white;
+}
+
+#newArrivals .container .product .content .order input {
+    flex: 1 0 100px;
+    width: calc(100% - 145px);
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: #d9d9d9 1px solid;
+}
